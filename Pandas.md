@@ -48,20 +48,34 @@ reviews_df['column_name'][0]
 ```
 ## Indexing in Pandas
 row-first, column-second (contrast to native python)
-### Index-based selection
-- select first row of the df
+### Index-based selection `.iloc`
+select first row of the df
 ```python
 reviews_df.iloc[0]
 ```
-- select all rows in the first column
+select all rows in the first column
 ```python
 reviews_df.iloc[:,0]
 ```
-- select first 3 rows in the first column
+select first 3 rows in the first column
 ```python
 reviews_df.iloc[:3,0]
 ```
-- pass a list to select 
+pass a list to select 
 ```python
 reviews_df.iloc[[0, 1, 2], 0]
+```
+select the last 5 rows
+```python
+reviews_df.iloc[-5:]
+```
+### Label-based selection  `.loc`
+select the first row in 'country' column
+```python
+reviews_df.loc[0]['country']
+```
+In some case, using `.loc` will be a lot easier coz no need to look at index
+- select all rows from list of column names using `.loc`
+```python
+reviews_df.loc[:, ['taster_name', 'taster_twitter_handle', 'points']]
 ```
