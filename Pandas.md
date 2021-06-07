@@ -20,7 +20,7 @@ use [index_col]() if there is predefined index in CSV file.
 reviews_df = pd.read_csv(<path_to_csv_file>, index_col=0)
 ```
 ### Save to CSV
-use [to_csv]() with your df.
+use [to_csv]() to save to .csv file.
 ```python
 reviews_df.to_csv('reviews.csv')
 ```
