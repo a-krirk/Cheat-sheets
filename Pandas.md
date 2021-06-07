@@ -37,3 +37,7 @@ use [to_csv]() to save to .csv file.
 reviews_df.to_csv('reviews.csv')
 ```
 ## ภาษาไทยก็ได้นะ
+`print`
+*print*
+_print_
+``There is a literal backtick (`) here.``
