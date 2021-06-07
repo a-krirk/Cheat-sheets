@@ -28,6 +28,10 @@ check DataFrame shape using [shape]()
 ```python
 reviews_df.shape
 ```
+look at some of the data using [.head()]()
+```python
+reviews_df.head()
+```
 ### Save to CSV
 use [to_csv]() to save to .csv file.
 ```python
