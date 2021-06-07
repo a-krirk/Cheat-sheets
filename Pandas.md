@@ -5,7 +5,7 @@
 import pandas as pd
 ```
 ### Create DataFrame
-1) Pass in dictionary and pass in list of index to [index]: index_var
+1) Pass in dictionary and pass in list of index to [index]()
 ```python
 df = pd.DataFrame({'Column A': [1,2,3,4], 'Column B':[5,6,7,8]}, index= ['2019 sales', '2020 sales', '2021 sales'])
 ```
