@@ -36,4 +36,6 @@ use `to_csv()` to save to .csv file.
 ```python
 reviews_df.to_csv('reviews.csv')
 ```
-## ภาษาไทยก็ได้นะ
+
+# Indexing, Selecting & Assigning
+
