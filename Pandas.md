@@ -38,4 +38,30 @@ reviews_df.to_csv('reviews.csv')
 ```
 
 # Indexing, Selecting & Assigning
-
+## Accessing Series
+```python
+reviews_df['column_name'] 
+```
+Access to elements using index
+```python
+reviews_df['column_name'][0]
+```
+## Indexing in Pandas
+row-first, column-second (contrast to native python)
+### Index-based selection
+- select first row of the df
+```python
+reviews_df.iloc[0]
+```
+- select all rows in the first column
+```python
+reviews_df.iloc[:,0]
+```
+- select first 3 rows in the first column
+```python
+reviews_df.iloc[:3,0]
+```
+- pass a list to select 
+```python
+reviews_df.iloc[[0, 1, 2], 0]
+```
