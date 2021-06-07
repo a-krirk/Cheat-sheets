@@ -6,7 +6,7 @@ import pandas as pd
 ```
 ### Create DataFrame
 Ways to create DataFrame
-1) Pass in dictionary and pass in list of index to [index]()
+1) Pass in dictionary and pass in list of index name to [index]()
 ```python
 sale_df = pd.DataFrame({'Column A': [1,2,3,4], 'Column B':[5,6,7,8]}, index= ['2019 sales', '2020 sales', '2021 sales'])
 ```
