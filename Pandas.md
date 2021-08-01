@@ -81,5 +81,11 @@ In some case, using `.loc` will be a lot easier coz no need to look at index
 ```python
 reviews_df.loc[:, ['taster_name', 'taster_twitter_handle', 'points']]
 ```
-`.iloc` and `.loc` deals with index a bit differently
+`.iloc` and `.loc` deals with index a bit differently. `.iloc` use standard python indexing while `.loc` deals with index inclusively.
+
+This is particularly confusing when the DataFrame index is a simple numerical list, e.g. 0,...,1000. 
+
+In this case df.iloc[0:1000] will return 1000 entries, while df.loc[0:1000] return 1001 of them! 
+
+To get 1000 elements using loc, you will need to go one lower and ask for df.loc[0:999].
 
