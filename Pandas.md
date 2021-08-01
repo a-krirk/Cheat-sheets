@@ -103,6 +103,6 @@ reviews_df.country == 'Italy'
 ```
 We can pass the mask to `.loc` to select rows with the condition.
 ```python
-reviews.loc[reviews.country == 'Italy']
+reviews_df.loc[reviews_df.country == 'Italy']
 ```
 
