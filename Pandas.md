@@ -89,9 +89,15 @@ In this case df.iloc[0:1000] will return 1000 entries, while df.loc[0:1000] retu
 
 To get 1000 elements using loc, you will need to go one lower and ask for df.loc[0:999].
 
-###Manipulating the index
+### Manipulating the index
 The `set_index()` method can be used to do the job. Here is what happens when we set_index to the title field:
 ```python
-reviews.set_index("title")
+reviews_df.set_index("title")
 ```
+### Conditional selection
+To do interesting things with the data, however, we often need to ask questions based on conditions.
+```python
+reviews_df.country == 'Italy'
+```
+
 
