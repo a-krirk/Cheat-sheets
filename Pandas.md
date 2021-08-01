@@ -97,7 +97,7 @@ reviews_df.set_index("title")
 ### Conditional selection
 To do interesting things with the data, however, we often need to ask questions based on conditions.
 
-To select rows only where country are Italy, Use this condition as a mask.
+To select wines only from Italy, Use this condition as a mask.
 ```python
 reviews_df.country == 'Italy'
 ```
@@ -105,4 +105,14 @@ We can pass the mask to `.loc` to select rows with the condition.
 ```python
 reviews_df.loc[reviews_df.country == 'Italy']
 ```
+### Using & (and), | (or)
+We can use the ampersand (&) to bring the two conditions together
 
+E.g. If you want to select wines only from Italy which's got review score more than 90
+```python
+reviews_df.loc[(reviews_df.country == 'Italy') & (reviews_df.points >= 90)]
+```
+Using | is similar.
+```python
+reviews_df.loc[(reviews_df.country == 'Italy') | (reviews_df.points >= 90)]
+```
