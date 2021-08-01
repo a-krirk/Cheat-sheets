@@ -124,3 +124,8 @@ For example, here's how we can use it to select wines only from Italy or France:
 ```python
 reviews_df.loc[reviews_df.country.isin(['Italy', 'France'])]
 ```
+### .isnull & .notnull method
+These methods let you highlight values which are (or are not) empty (NaN). For example, to filter out wines lacking a price tag in the dataset, here's what we would do:
+```python
+reviews_df.loc[reviews_df.price.notnull()]
+```
