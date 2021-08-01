@@ -70,7 +70,7 @@ select the last 5 rows
 reviews_df.iloc[-5:]
 ```
 ### Label-based selection  `.loc`
-select the first row in 'country' column. 
+select the first row in 'country' column. &nbsp;
 This case the first row has indax value = 0, so passing 0 will return the first row. 0 here is not index itself but it is the index's value
 ```python
 reviews_df.loc[0]['country']
@@ -80,3 +80,5 @@ In some case, using `.loc` will be a lot easier coz no need to look at index
 ```python
 reviews_df.loc[:, ['taster_name', 'taster_twitter_handle', 'points']]
 ```
+`.iloc` and `.loc` deals with index a bit differently
+
