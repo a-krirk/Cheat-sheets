@@ -129,3 +129,14 @@ These methods let you highlight values which are (or are not) empty (NaN). For e
 ```python
 reviews_df.loc[reviews_df.price.notnull()]
 ```
+### Assigning data
+Assign a constant value:
+```python
+reviews_df['critic'] = 'everyone'
+```
+Assign with an iterable of values:
+```python
+reviews_df['index_backwards'] = range(len(reviews_df), 0, -1)
+```
+
+
