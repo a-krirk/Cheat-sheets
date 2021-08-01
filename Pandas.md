@@ -116,8 +116,8 @@ Using | is similar.
 ```python
 reviews_df.loc[(reviews_df.country == 'Italy') | (reviews_df.points >= 90)]
 ```
-### isin method
-Pandas has a built-in method `isin` which lets you select data whose value "is in" a list of values. 
+### .isin method
+Pandas has a built-in method `.isin` which lets you select data whose value "is in" a list of values. 
 
 For example, here's how we can use it to select wines only from Italy or France:
 
