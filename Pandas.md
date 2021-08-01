@@ -96,8 +96,13 @@ reviews_df.set_index("title")
 ```
 ### Conditional selection
 To do interesting things with the data, however, we often need to ask questions based on conditions.
+
+To select rows only where country are Italy, Use this condition as a mask.
 ```python
 reviews_df.country == 'Italy'
 ```
-
+We can pass the mask to `.loc` to select rows with the condition.
+```python
+reviews.loc[reviews.country == 'Italy']
+```
 
